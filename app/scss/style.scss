@@ -37,27 +37,62 @@ body,
 html {
     padding: 0;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 
 body {
+    background-image: url(../images/bg.jpg);
+    background-repeat: repeat;
 }
 .wrapper {
-    max-width:900px;
+    max-width:1170px;
     margin: 0 auto;
+    padding: 0 10px;
 }
-.header {
-    &> .wrapper{
-    max-width: 1100px;
-    height: 52px;
-    background-color: rgba(243, 243, 243, 0.8);
+.header{
+    margin: 0 auto;
     border-radius: 0 0 8px 8px;
-    display: flex;
-    justify-content: space-between;
-    }
-}
-.menu {
-    &-list{
+    &-content {
+        max-width: 100%;
+        height: 52px;
+        background-color: rgba(243, 243, 243, 0.8);
+        border-radius: 0 0 8px 8px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        opacity: 0.8;
     }
+    }
+ .logo {
+    margin-left: 35px;
+ }
+.menu {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 35px;
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Montserrat';
+        gap: 35px;
+    }
+    &__item {
+        cursor: pointer;
+        transition: all 0.2s;
+        &:hover {
+            color: #007aff;
+            transition: .3s;
+
+        }
+    }
+}
+.main {
+    margin: 0 auto;
+}
+.front-page {
+    width: 100vw;
+    background-image: url(../images/bg-main.jpeg);
+    background-repeat: no-repeat;
 }
